@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "552329495120",
+    "project_id": "insta-cards",
+    "storage_bucket": "insta-cards.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552329495120:android:e506852e446e5973898755",
+        "android_client_info": {
+          "package_name": "com.sgssb.instacard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552329495120-80ounc7ma3jdso9svavsm5pq68ngaigf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHHt6617RxCJy2LdYjnEdIwuV1Waj7Qk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552329495120-80ounc7ma3jdso9svavsm5pq68ngaigf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
