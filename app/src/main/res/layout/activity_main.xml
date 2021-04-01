@@ -24,6 +24,8 @@
         android:id="@+id/bnv"
         android:background="@color/blackGray"
         style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
-        app:labelVisibilityMode="selected"/>
+        app:labelVisibilityMode="selected"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"/>
 
 </LinearLayout>
