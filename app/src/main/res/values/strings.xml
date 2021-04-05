@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">InstaCard</string>
     <string name="transaction">Transaction</string>
-    <string name="profile">Profile</string>
+    <string name="profile">Account</string>
     <string name="home">Home</string>
+    <string name="trade">Trade</string>
+    <string name="history">History</string>
+    <string name="search">Search</string>
+    <string name="exchange">Exchange</string>
+    <string name="stocks">Stocks</string>
+    <string name="crowdfunding">Crowdfunding</string>
+    <string name="addCard">Add Card</string>
 </resources>

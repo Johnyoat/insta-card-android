@@ -1,22 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ui.transactions.TransactionFragment">
 
+    <include layout="@layout/toolbar" />
+
     <LinearLayout
-        android:id="@+id/toolbar"
+        android:id="@+id/detailsBar"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:orientation="horizontal" />
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/balanceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Spent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="GHS1000"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="April"
+            android:textColor="@color/white"
+            app:chipBackgroundColor="@color/litGray"
+            app:chipEndPadding="16dp"
+            app:chipIcon="@drawable/calendar_today"
+            app:chipIconTint="@color/white"
+            app:chipStartPadding="16dp" />
+
+
+    </LinearLayout>
+
+    <!--    <com.google.android.material.chip.ChipGroup-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:singleSelection="true">-->
+
+    <!--        <com.google.android.material.chip.Chip-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="All"-->
+    <!--            android:checked="true"-->
+    <!--            style="@style/Widget.MaterialComponents.Chip.Choice"/>-->
+    <!--        <com.google.android.material.chip.Chip-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Today"-->
+    <!--            style="@style/Widget.MaterialComponents.Chip.Choice"/>-->
+    <!--        <com.google.android.material.chip.Chip-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="This Week"-->
+    <!--            style="@style/Widget.MaterialComponents.Chip.Choice"/>-->
+    <!--        <com.google.android.material.chip.Chip-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="This Month"-->
+    <!--            style="@style/Widget.MaterialComponents.Chip.Choice"/>-->
+    <!--    </com.google.android.material.chip.ChipGroup>-->
+
 
     <LinearLayout
         android:id="@+id/cardy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar"
         android:paddingStart="8dp"
         android:paddingEnd="8dp">
 
@@ -33,4 +97,4 @@
         android:layout_below="@id/cardy"
         tools:listitem="@layout/transaction_item" />
 
-</RelativeLayout>
+</LinearLayout>

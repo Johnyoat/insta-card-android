@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="8dp"
+    android:padding="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/currencyImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_us" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/currencyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/currencyImage"
+        android:text="United State Dollar"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/currencySymbols"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currencyName"
+        android:layout_alignBaseline="@id/currencyImage"
+        android:layout_toEndOf="@+id/currencyImage"
+        android:text="USD"
+        android:layout_marginTop="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/currencyName"
+        android:layout_alignParentEnd="true"
+        android:text="$1000"
+        android:textStyle="bold"
+        android:paddingEnd="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="2%"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@id/currencySymbols"
+        android:drawableStart="@drawable/ic_chevron_down"
+        android:background="@drawable/curve_edges"
+        android:backgroundTint="@color/primaryColor"
+        android:paddingStart="8dp"
+        android:paddingEnd="2dp"
+        android:gravity="center_vertical"
+        app:drawableTint="@color/white"/>
+
+</RelativeLayout>

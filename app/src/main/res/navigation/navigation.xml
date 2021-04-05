@@ -10,8 +10,8 @@
         android:label="home_fragment"
         tools:layout="@layout/home_fragment" >
         <action
-            android:id="@+id/action_homeFragment_to_transactionFragment"
-            app:destination="@id/transactionFragment" />
+            android:id="@+id/action_homeFragment_to_tradeFragment"
+            app:destination="@id/tradeFragment" />
     </fragment>
     <fragment
         android:id="@+id/transactionFragment"
@@ -27,4 +27,13 @@
         android:name="com.sgssb.instacard.ui.profile.ProfileFragment"
         android:label="profile_fragment"
         tools:layout="@layout/profile_fragment" />
+    <fragment
+        android:id="@+id/tradeFragment"
+        android:name="com.sgssb.instacard.ui.trade.TradeFragment"
+        android:label="trade_fragment"
+        tools:layout="@layout/trade_fragment" >
+        <action
+            android:id="@+id/action_tradeFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
+    </fragment>
 </navigation>
