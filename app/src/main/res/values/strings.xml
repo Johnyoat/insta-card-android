@@ -10,4 +10,11 @@
     <string name="stocks">Stocks</string>
     <string name="crowdfunding">Crowdfunding</string>
     <string name="addCard">Add Card</string>
+    <string name="no_transactions">No Transactions</string>
+    <string name="you_ve_not_made_any_transaction">You\'ve not made any transaction</string>
+    <string name="make_a_transaction">Make a transaction</string>
+    <string name="cedi">GH₵</string>
+    <string name="total_spent">Total Spent</string>
+    <string name="welcome">Welcome to SGSSB Insta Card  \nVirtual Bank</string>
+    <string name="message">We offer services remotely via online banking and telephone banking through our independent banking agent network</string>
 </resources>

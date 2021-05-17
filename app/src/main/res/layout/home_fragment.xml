@@ -8,42 +8,50 @@
     android:orientation="vertical"
     tools:context=".ui.home.HomeFragment">
 
-   <include layout="@layout/toolbar"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_margin="16dp"
-        android:background="@drawable/curve_edges"
-        android:backgroundTint="@color/primaryColor"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
         android:gravity="center_vertical"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:orientation="horizontal">
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="My Balance" />
+            android:layout_weight="0.1"
+            android:text="InstaCard"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="80dp"
             android:layout_height="80dp"
-            android:text="GH₵5,765.00"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
-            android:textStyle="bold" />
+            android:id="@+id/profileBtn">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Societe Generale Ghana:#"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="circle_effect_two.json"
+                app:lottie_loop="true" />
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4941112239105775" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/john"
+                app:civ_border_color="@color/primaryColor"
+                app:civ_border_width="2dp"
+                android:id="@+id/userProfile"/>
+        </RelativeLayout>
+
 
     </LinearLayout>
+
+    <include layout="@layout/card_layout"
+        android:id="@+id/cardLayout"/>
 
 
     <androidx.core.widget.NestedScrollView
@@ -62,12 +70,15 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/transferMoney"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="16dp"
                     android:layout_weight="0.1"
+                    android:clickable="true"
+                    android:focusable="true"
                     app:cardBackgroundColor="@color/litGray"
                     app:cardElevation="7dp">
 
@@ -87,18 +98,21 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
-                            android:text="Transfer Money" />
+                            android:text="Transfer Money"/>
 
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/payBills"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="16dp"
                     android:layout_marginBottom="16dp"
                     android:layout_weight="0.1"
+                    android:clickable="true"
+                    android:focusable="true"
                     app:cardBackgroundColor="@color/litGray"
                     app:cardElevation="7dp">
 
@@ -131,12 +145,15 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/buyAirtime"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="16dp"
                     android:layout_weight="0.1"
+                    android:clickable="true"
+                    android:focusable="true"
                     app:cardBackgroundColor="@color/litGray"
                     app:cardElevation="7dp">
 
@@ -162,12 +179,15 @@
                 </com.google.android.material.card.MaterialCardView>
 
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/transactions"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="16dp"
                     android:layout_marginBottom="16dp"
                     android:layout_weight="0.1"
+                    android:clickable="true"
+                    android:focusable="true"
                     app:cardBackgroundColor="@color/litGray"
                     app:cardElevation="7dp">
 
@@ -181,13 +201,13 @@
                         <androidx.appcompat.widget.AppCompatImageView
                             android:layout_width="48dp"
                             android:layout_height="48dp"
-                            android:src="@drawable/ic_card" />
+                            android:src="@drawable/ic_histroy_vector" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
-                            android:text="Add Card" />
+                            android:text="Transactions" />
 
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>

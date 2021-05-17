@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_homeFragment_to_tradeFragment"
             app:destination="@id/tradeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_transactionServiceFragment"
+            app:destination="@id/transactionServiceFragment" />
     </fragment>
     <fragment
         android:id="@+id/transactionFragment"
@@ -36,4 +39,18 @@
             android:id="@+id/action_tradeFragment_to_transactionFragment"
             app:destination="@id/transactionFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/transactionServiceFragment"
+        android:name="com.sgssb.instacard.ui.transactionService.TransactionServiceActivity"
+        android:label="transaction_service_fragment"
+        tools:layout="@layout/transaction_service_fragment" >
+        <action
+            android:id="@+id/action_transactionServiceFragment_to_transferFragment"
+            app:destination="@id/transferFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transferFragment"
+        android:name="com.sgssb.instacard.ui.transfer.TransferFragment"
+        android:label="transfer_fragment"
+        tools:layout="@layout/transfer_fragment" />
 </navigation>

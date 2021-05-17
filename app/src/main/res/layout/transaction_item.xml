@@ -28,7 +28,7 @@
             android:id="@+id/transactionName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Apple Music Subscription"
+            android:text="Apple Music"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:text="-$4.56"
+            android:text="-GH₵ 34.56"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
             android:textStyle="bold"/>
     </RelativeLayout>

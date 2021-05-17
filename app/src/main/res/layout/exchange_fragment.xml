@@ -23,7 +23,11 @@
         android:textColorHint="@color/white"
         app:drawableTint="@color/white" />
 
-  <include layout="@layout/exchange_item"/>
-  <include layout="@layout/exchange_item_two"/>
-
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:listitem="@layout/exchange_item"
+      android:id="@+id/exchangeList"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      android:orientation="vertical"/>
 </LinearLayout>

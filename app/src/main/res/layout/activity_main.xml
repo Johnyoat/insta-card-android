@@ -26,6 +26,7 @@
         style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
         app:labelVisibilityMode="selected"
         app:itemTextColor="@color/white"
-        app:itemIconTint="@color/white"/>
+        app:itemIconTint="@color/white"
+        android:visibility="gone"/>
 
 </LinearLayout>
